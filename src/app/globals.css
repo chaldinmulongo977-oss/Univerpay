@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --muted: 214 32% 95%;
+    --muted-foreground: 215 16% 40%;
+    --border: 214 32% 88%;
+    --input: 214 32% 82%;
+    --ring: 221 83% 45%;
+    --primary: 224 76% 48%;            /* bleu institutionnel */
+    --primary-foreground: 0 0% 100%;
+    --success: 142 72% 29%;            /* paiement confirmé */
+    --success-foreground: 0 0% 100%;
+    --warning: 27 96% 45%;             /* en attente */
+    --warning-foreground: 0 0% 100%;
+    --destructive: 0 72% 45%;          /* erreur */
+    --destructive-foreground: 0 0% 100%;
+    --chart-1: 224 76% 48%;
+    --chart-2: 215 20% 55%;
+    --chart-3: 215 14% 75%;
+  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; }
+  button, a, input, select, textarea { @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2; }
+}
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

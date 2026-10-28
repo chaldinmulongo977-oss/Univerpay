@@ -1,0 +1,2 @@
+-- Aucune donnée fictive en production. Les rôles, facultés et types de documents viennent des migrations.
+-- Les données de démonstration doivent être ajoutées dans un fichier séparé exécuté uniquement en développement.
